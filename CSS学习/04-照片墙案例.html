@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>照片墙案例</title>
+		<style type="text/css">
+			/* 设置body */
+			body{
+				text-align: center;
+				background-color: gray;
+			}
+			/* 图片样式 */
+			img{
+				/* 设置高度 */
+				width: 12%;
+				/* border:solid 1px; */
+				/* 设置内边距 */
+				padding: 10px;
+				/* 设置背景颜色 */
+				background-color: white;
+				/* 设置倾斜角度 */
+				transform: rotate(-10deg);
+				/* 设置外边距 */
+				margin: 20px;
+			}
+			/* 设置伪类给标签添加样式 */
+			img:hover{
+				/* 设置旋转角度和缩放 */
+				transform: rotate(0deg) scale(1.5);
+				/* 设置显示优先级别 */
+				z-index: 1;
+				/* 设置显示时间 */
+				transition: 0.5s;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/1.jpg" alt="">
+		<img src="img/2.jpg" alt="">
+		<img src="img/3.jpg" alt="">
+		<img src="img/4.gif" alt=""><br>
+		<img src="img/1.jpg" alt="">
+		<img src="img/2.jpg" alt="">
+		<img src="img/3.jpg" alt="">
+		<img src="img/4.gif" alt="">
+	</body>
+</html>
