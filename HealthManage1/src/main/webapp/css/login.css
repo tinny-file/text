@@ -1,0 +1,154 @@
+#section{
+    background-image: url("../images/login-bg.jpeg");
+    height: 100%;
+    padding-top: 10em;
+}
+#div{
+    height: 40rem;
+    width:40rem;
+    margin:auto;
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+table{
+    border-collapse:separate;
+    border-spacing:0px 20px;
+}
+td{
+    /*border-spacing: 100px;*/
+    text-align: center;
+}
+td a{
+    /* 设置超链接去除下划线 */
+    text-decoration: none;
+    color: black;
+}
+input[type=text]{
+    color:white;
+    width: 20rem;
+    /*去掉外框*/
+    outline: none;
+    /*设置阴影*/
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input::-webkit-input-placeholder{
+    color: #9acfea;
+}
+input[type=password]{
+    width: 20rem;
+    /*去掉外框*/
+    outline: none;
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+h1{
+    height: 50px;
+    /*background-color: gray;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ac2925;
+}
+img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+input[type=button]{
+    width: 20rem;
+    height: 3em;
+    background:linear-gradient(to right,blue,indianred);
+    /*去掉外框*/
+    outline: none;
+    background-color: aquamarine;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+
+
+/* 导航条下拉框 */
+/* content */
+/* footer */
+footer{
+    min-width: 1200px;
+    background-color: #202226;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+footer a{
+    color: #ddd;
+}
+footer ul li,footer dl{
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+footer ul li{
+    padding-top: 10px;
+    width: 24%;
+}
+footer ul li:nth-of-type(3){
+    text-align: center;
+}
+footer ul li:nth-of-type(3) h2{
+    font-size: 28px;
+    font-weight:500;
+}
+footer ul li:nth-of-type(3) h2:hover{
+    color:#ffb871;
+}
+footer ul li:nth-of-type(3) p{
+    font-size: 16px;
+    line-height: 2.2;
+}
+footer dl dt{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer dl dd{
+    line-height: 2.2
+}
+footer dl dd a:hover{
+    color:#ffb871;
+}
+footer dl .offset-bottom{
+    margin-top: 10px;
+}
+footer ul li:last-child{
+    text-align: center;
+}
+footer ul li:last-child h4{
+    margin-top: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!-- 开启使用开发模式，详细错误提示 -->
+    <constant name="struts.devMode" value="true" />
+    <!-- 将对象交给spring管理 -->
+    <constant name="struts.objectFactory" value="spring" />
+    <constant name="struts.custom.i18n.resources" value="res" />
+    <!-- 指定资源编码类型 -->
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <!-- 指定每次请求到达，重新加载资源文件 -->
+    <constant name="struts.i18n.reload" value="false" />
+    <!-- 指定每次配置文件更改后，自动重新加载 -->
+    <constant name="struts.configuration.xml.reload" value="false" />
+    <!-- 默认后缀名 -->
+<!--    <constant name="struts.action.extension" value="action," />-->
+    <!-- 指定上传文件的大小上限 -->
+    <constant name="struts.multipart.maxSize" value="209715200" />
+    <!-- 浏览器是否缓存静态内容，生产环境下需要设置为true -->
+    <constant name="struts.serve.static.browserCache" value="true" />
+    <!-- 开启动态方法调用 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+
+    <!--package包作用是管理action 通常一个业务模块 用一个包  在struts中包一定要继承struts-default包
+        还有一个namespace 作为路径的一部分 访问路径是项目名/命名空间/actionname
+        result  name  action处理方法返回值 type  跳转结果类型 标签体   指定跳转的页面
+     包名重复-->
+    <package name="xuantest" extends="struts-default">
+        <!-- name 访问路径   class 存储的位置   method是 调用Action中的访问方法-->
+        <action name="page" class="action.PageAction" method="login">
+            <!--result是返回的跳转界面-->
+            <result name="success">/WEB-INF/jsp/navigation.jsp</result>
+        </action>
+
+
+        <action name="register" class="action.RegisterAction" method="register">
+             <result name="Register">/WEB-INF/jsp/register.jsp</result>
+        </action>
+        <action name="registersave" class="action.RegisterAction" method="regist">
+            <result name="success">/WEB-INF/jsp/navigation.jsp</result>
+        </action>
+
+
+        <action name="login" class="action.LoginAction" method="user_login">
+
+        </action>
+        <action name="checkUserName" class="action.LoginAction" method="checkName">
+            <!-- 没有返回值-->
+        </action>
+        <action name="checkName" class="action.RegisterAction" method="check">
+            <!-- 没有返回值-->
+        </action>
+    </package>
+</struts>

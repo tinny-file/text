@@ -1,0 +1,153 @@
+#section{
+    background-image: url("../images/login-bg.jpeg");
+    height: 100%;
+    padding-top: 10em;
+}
+#div{
+    height: 40rem;
+    width:40rem;
+    margin:auto;
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+table{
+    /*border-collapse:separate;*/
+    /*border-spacing:0px 20px;*/
+}
+input[type=button]{
+    width: 20rem;
+    height: 3em;
+    background:linear-gradient(to right,blue,indianred);
+    /*去掉外框*/
+    outline: none;
+    background-color: aquamarine;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input[type=password]{
+    width: 20rem;
+    /*去掉外框*/
+    outline: none;
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input[type=text]{
+    color:white;
+    width: 20rem;
+    /*去掉外框*/
+    outline: none;
+    /*设置阴影*/
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input[type=email]{
+    color:white;
+    width: 20rem;
+    /*去掉外框*/
+    outline: none;
+    /*设置阴影*/
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input[type=tel]{
+    color:white;
+    width: 20rem;
+    /*去掉外框*/
+    outline: none;
+    /*设置阴影*/
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/*修改date属性*/
+input[type=date]::-webkit-inner-spin-button { visibility: hidden; }
+#birth{
+    width: 20rem;
+    /*设置阴影*/
+    box-shadow:3px 3px 3px 3px rgba(255,255,255,0.5);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position-x: 495px;
+    background-position-y: -1px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.table input{
+    margin-top: 10px;
+}
+.table h1{
+    margin-top: 30px;
+}
+input[type=submit]{
+    width: 20rem;
+    height: 3.5em;
+    background:linear-gradient(to right,blue,indianred);
+    /*去掉外框*/
+    outline: none;
+    background-color: aquamarine;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+h1{
+    height: 50px;
+    /*background-color: gray;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ac2925;
+}
+td{
+    /*border-spacing: 100px;*/
+    text-align: center;
+}
+#img{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+}
+img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}

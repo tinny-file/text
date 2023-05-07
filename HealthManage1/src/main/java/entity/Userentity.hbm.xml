@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.Userentity" table="user" schema="health">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="serialNumber">
+            <column name="serialNumber" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="name">
+            <column name="name" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="sex">
+            <column name="sex" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="birth">
+            <column name="birth" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="age">
+            <column name="age" sql-type="varchar(3)" length="3" not-null="true"/>
+        </property>
+        <property name="identity">
+            <column name="identity" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="ethnic">
+            <column name="ethnic" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="adress">
+            <column name="adress" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="tel">
+            <column name="tel" sql-type="varchar(11)" length="11" not-null="true"/>
+        </property>
+        <property name="marriage">
+            <column name="marriage" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="height">
+            <column name="height" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="weight">
+            <column name="weight" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="temperature">
+            <column name="temperature" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="bloodtype">
+            <column name="bloodtype" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="pulse">
+            <column name="pulse" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="heartRate">
+            <column name="heartRate" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="leftEyesight">
+            <column name="leftEyesight" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="rightEyesight">
+            <column name="rightEyesight" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="leftHear">
+            <column name="leftHear" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="rightHear">
+            <column name="rightHear" sql-type="varchar(10)" length="10" not-null="true"/>
+        </property>
+        <property name="systolicBloodPressure">
+            <column name="systolicBloodPressure" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="diastolicPressure">
+            <column name="diastolicPressure" sql-type="varchar(20)" length="20" not-null="true"/>
+        </property>
+        <property name="userCase">
+            <column name="userCase" sql-type="varchar(255)" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
